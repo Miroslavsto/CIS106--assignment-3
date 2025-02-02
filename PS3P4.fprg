@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS3P4"/>
+        <attribute name="authors" value="miros"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-02 12:25:49 AM"/>
+        <attribute name="created" value="bWlyb3M7TEFQVE9QLTZUNkI5NVM2OzIwMjUtMDItMDI7MTI6MTM6NDAgQU07MjgyMQ=="/>
+        <attribute name="edited" value="bWlyb3M7TEFQVE9QLTZUNkI5NVM2OzIwMjUtMDItMDI7MTI6MjU6NDkgQU07MTsyOTQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="make" type="String" array="False" size=""/>
+            <declare name="model" type="String" array="False" size=""/>
+            <declare name="msrp" type="Real" array="False" size=""/>
+            <declare name="amountOff" type="Real" array="False" size=""/>
+            <declare name="discountedPercentage" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a Make&quot;" newline="True"/>
+            <input variable="make"/>
+            <output expression="&quot;Enter a Model&quot;" newline="True"/>
+            <input variable="model"/>
+            <output expression="&quot;Enter a MSRP&quot;" newline="True"/>
+            <input variable="msrp"/>
+            <output expression="&quot;Enter a discounted percentage&quot;" newline="True"/>
+            <input variable="discoundedPercentage"/>
+            <assign variable="amountOff" expression="msrp * (discountedPercentage / 100)"/>
+            <output expression="make &amp;&quot; - &quot; &amp;model &amp;&quot;: &quot; &amp;msrp &amp;&quot; Your discounted price is: &quot; &amp;(msrp - amoutOff)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

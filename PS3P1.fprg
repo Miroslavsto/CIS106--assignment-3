@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS3P1"/>
+        <attribute name="authors" value="miros"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-01 11:58:48 PM"/>
+        <attribute name="created" value="bWlyb3M7TEFQVE9QLTZUNkI5NVM2OzIwMjUtMDEtMzE7MDk6NDA6MTAgUE07Mjg0MA=="/>
+        <attribute name="edited" value="bWlyb3M7TEFQVE9QLTZUNkI5NVM2OzIwMjUtMDItMDE7MTE6NTg6NDggUE07MTsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sticker" type="String" array="False" size=""/>
+            <declare name="sharePrice" type="Real" array="False" size=""/>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <declare name="totalAmount" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a ticket&quot;" newline="True"/>
+            <input variable="ticker"/>
+            <output expression="&quot;Enter a price per share&quot;" newline="True"/>
+            <input variable="sharePrice"/>
+            <output expression="&quot;Enter a quantity&quot;" newline="True"/>
+            <input variable="quantity"/>
+            <assign variable="totalAmount" expression="sharePrice*quantity"/>
+            <output expression="&quot;The total amount is:&quot;&amp;totalAmount" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

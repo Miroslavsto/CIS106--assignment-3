@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS3P5"/>
+        <attribute name="authors" value="miros"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-02 12:33:28 AM"/>
+        <attribute name="created" value="bWlyb3M7TEFQVE9QLTZUNkI5NVM2OzIwMjUtMDItMDI7MTI6MjY6MjIgQU07MjgyNQ=="/>
+        <attribute name="edited" value="bWlyb3M7TEFQVE9QLTZUNkI5NVM2OzIwMjUtMDItMDI7MTI6MzM6MjggQU07MTsyOTM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="radius" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="parimeter" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Name&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Enter radius&quot;" newline="True"/>
+            <input variable="radius"/>
+            <assign variable="area" expression="3.174 * (radius * radius)"/>
+            <assign variable="parimeter" expression="2 * 3.174 * radius"/>
+            <output expression="&quot;The area is: &quot; &amp;area&#13;&#10;&amp;&quot;The parimeter is: &quot; &amp;parimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS3P2"/>
+        <attribute name="authors" value="miros"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-02 12:08:49 AM"/>
+        <attribute name="created" value="bWlyb3M7TEFQVE9QLTZUNkI5NVM2OzIwMjUtMDItMDI7MTI6MDA6MDEgQU07MjgxNA=="/>
+        <attribute name="edited" value="bWlyb3M7TEFQVE9QLTZUNkI5NVM2OzIwMjUtMDItMDI7MTI6MDg6NDkgQU07MTsyOTQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastName" type="String" array="False" size=""/>
+            <declare name="midtermScore" type="Integer" array="False" size=""/>
+            <declare name="finalScore" type="Integer" array="False" size=""/>
+            <declare name="totalPoints" type="Real" array="False" size=""/>
+            <output expression="&quot;enter last name&quot;" newline="True"/>
+            <input variable="lastName"/>
+            <output expression="&quot;enter midterm exam score&quot;" newline="True"/>
+            <input variable="midtermScore"/>
+            <output expression="&quot;enter final score&quot;" newline="True"/>
+            <input variable="finalScore"/>
+            <assign variable="totalPoints" expression="(midtermScore * 0.4)+(finalScore * 0.6)"/>
+            <output expression="lastName &amp;&quot;'s total points: &quot; &amp;totalPoints" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS3P3"/>
+        <attribute name="authors" value="miros"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-02 12:13:35 AM"/>
+        <attribute name="created" value="bWlyb3M7TEFQVE9QLTZUNkI5NVM2OzIwMjUtMDItMDI7MTI6MDg6NTkgQU07MjgzNQ=="/>
+        <attribute name="edited" value="bWlyb3M7TEFQVE9QLTZUNkI5NVM2OzIwMjUtMDItMDI7MTI6MTM6MzUgQU07MTsyOTMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="amountPaid" type="Real" array="False" size=""/>
+            <declare name="amountForEach" type="Real" array="False" size=""/>
+            <output expression="&quot;enter amount for compleate the job&quot;" newline="True"/>
+            <input variable="amountPaid"/>
+            <assign variable="amountForEach" expression="amountPaid / 3"/>
+            <output expression="&quot;We got paid &quot; &amp; amountPaid &amp;&quot;and each of us recived &quot; &amp;amountForEach" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
